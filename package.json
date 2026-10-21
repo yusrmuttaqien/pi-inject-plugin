@@ -1,0 +1,24 @@
+{
+  "name": "pi-inject-plugin",
+  "version": "0.1.0",
+  "description": "Pi extension: inject a codeword into pi's compaction prompt and inject a markdown file verbatim into the system prompt",
+  "type": "module",
+  "keywords": [
+    "pi-package"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/test/*.test.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.1.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  }
+}
